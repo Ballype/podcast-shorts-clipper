@@ -1,0 +1,71 @@
+name: Shorts poster
+
+# Posting slots are 09:00, 14:00 and 19:00 WAT (08:00 / 13:00 / 18:00 UTC), see daily/config.json.
+# Two timers trigger it in the 4 hours after each slot (posting.max_late_hours), and missed slots are caught up:
+#  - GitHub's own cron below (often late or skipped on quiet repos), and
+#  - an external cron-job.org job calling the workflow_dispatch API (reliable; see daily/RUNBOOK.md).
+# Extra triggers are harmless: a slot is only ever posted once, and runs never overlap.
+on:
+  schedule:
+    - cron: '7,37 8-11,13-16,18-21 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'post (default), dry-run, check, or telegram'
+        required: false
+        default: 'post'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shorts-poster
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Is a slot due?
+        id: due
+        run: |
+          slot=$(python3 scripts/post/poster.py --due)
+          echo "slot=$slot" >> "$GITHUB_OUTPUT"
+          echo "due slot: ${slot:-none}"
+
+      - name: Install dependencies
+        if: steps.due.outputs.slot != '' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != '' && github.event.inputs.mode != 'post')
+        run: pip install -q composio requests google-api-python-client google-auth
+
+      - name: Run poster
+        if: steps.due.outputs.slot != '' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != '' && github.event.inputs.mode != 'post')
+        env:
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          COMPOSIO_USER_ID: ${{ vars.COMPOSIO_USER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "shorts-poster"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          case "${{ github.event.inputs.mode }}" in
+            dry-run) python3 scripts/post/poster.py --dry-run ;;
+            check)   python3 scripts/post/poster.py --check ;;
+            telegram) python3 scripts/post/poster.py --telegram ;;
+            igtest)  python3 scripts/post/poster.py --igtest ;;
+            *)       python3 scripts/post/poster.py ;;
+          esac
+
+      - name: Save queue state
+        if: always() && (steps.due.outputs.slot != '' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != '' && github.event.inputs.mode != 'post'))
+        run: |
+          git add daily/queue.json daily/post_log.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "poster: update queue after slot ${{ steps.due.outputs.slot }}"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
+          exit 1

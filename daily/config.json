@@ -1,0 +1,53 @@
+{
+  "channels": [
+    {
+      "name": "Example Podcast",
+      "url": "https://www.youtube.com/@EXAMPLE_CHANNEL/videos"
+    }
+  ],
+  "min_video_minutes": 30,
+  "scan_latest": 60,
+  "clips_per_day": {
+    "min": 5,
+    "max": 7
+  },
+  "clip_seconds": {
+    "target_min": 25,
+    "target_max": 45,
+    "hard_max": 60
+  },
+  "output_root": "youtube-clips",
+  "telegram_chat_id": 0,
+  "staging_repo": "YOUR_GITHUB_USER/your-staging-repo",
+  "clips_repo": "YOUR_GITHUB_USER/your-clipper-repo",
+  "instagram_user_id": "me",
+  "staging_keep_days": 1,
+  "youtube": {
+    "privacy": "private",
+    "category_id": "24",
+    "default_tags": [
+      "anime podcast",
+      "podcast clips",
+      "weeb",
+      "otaku",
+      "funny",
+      "storytime",
+      "shorts"
+    ],
+    "test_video_id": ""
+  },
+  "instagram_handle": "your_instagram",
+  "youtube_handle": "YourChannel",
+  "posting": {
+    "posts_per_day": 3,
+    "times": [
+      "09:00",
+      "14:00",
+      "19:00"
+    ],
+    "buffer_days": 7,
+    "utc_offset_hours": 1,
+    "max_late_hours": 4,
+    "max_videos_per_run": 3
+  }
+}
