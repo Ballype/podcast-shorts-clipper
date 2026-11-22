@@ -15,35 +15,64 @@
   },
   "clips": [
     {
-      "id": "clip_01",
-      "title": "My Grandma Got Swallowed By An Anaconda",
-      "score": 98,
-      "hook": "She actually got attacked and swallowed by an anaconda.",
+      "id": "clip_02",
+      "title": "They Invented The Word MEGA TOE",
+      "score": 96,
+      "hook": "Her toes were partially digested — turned into basically one mega toe.",
       "segments": [
-        ["44:11.10", "45:02.30"]
+        ["45:10.00", "45:57.00"]
       ],
       "emphasis": [
-        {"t": "44:14.56", "end": "44:15.56", "strength": "strong"},
-        {"t": "44:30.32", "end": "44:32.16", "strength": "strong"},
-        {"t": "45:00.16", "end": "45:01.28", "strength": "strong"}
+        {"t": "45:21.00", "end": "45:22.00", "strength": "strong"},
+        {"t": "45:40.00", "end": "45:41.00", "strength": "strong"},
+        {"t": "45:52.00", "end": "45:53.00", "strength": "strong"}
       ],
       "main_speaker": 0,
       "focus": [
-        {"from": "44:11.10", "to": "44:23.00", "person": [0]},
-        {"from": "44:23.00", "to": "44:26.00", "person": [1]},
-        {"from": "44:26.00", "to": "44:36.00", "person": [0]},
-        {"from": "44:36.00", "to": "44:40.00", "person": [1]},
-        {"from": "44:40.00", "to": "44:59.00", "person": [0]},
-        {"from": "44:59.00", "to": "45:02.30", "person": [1]}
+        {"from": "45:10.00", "to": "45:25.00", "person": [0]},
+        {"from": "45:25.00", "to": "45:28.00", "person": [1]},
+        {"from": "45:28.00", "to": "45:41.00", "person": [0]},
+        {"from": "45:41.00", "to": "45:50.00", "person": [1]},
+        {"from": "45:50.00", "to": "45:57.00", "person": [0]}
       ],
-      "highlight_words": ["anaconda", "swallowed", "varicose", "veins", "Congo", "snake"],
-      "description": "Joe drops the most absurd story ever — grandma got partially swallowed by an anaconda in the Congo, and the snake backed out because of her varicose veins.",
-      "social_caption": "The snake saw her varicose veins and said NOPE 😭🐍 #thebasementyard #comedy #shorts",
+      "highlight_words": ["mega", "toe", "digested", "Play-Doh", "sandals", "pizza", "cutter"],
+      "description": "Grandma's toes fused into ONE mega toe from anaconda stomach acid... and Joe suggests a pizza cutter.",
+      "social_caption": "THE MEGA TOE 😭💀 #thebasementyard #shorts #comedy",
       "hashtags": ["#shorts", "#thebasementyard", "#comedy", "#podcast", "#bantervault"],
-      "yt_title": "My Grandma Got Swallowed By An Anaconda 😭🐍",
-      "ig_caption": "The snake saw her varicose veins and backed OUT 💀 Would you go to the Congo at 80? 👇\n#thebasementyard #comedy #podcast #shorts #funny",
-      "pinned_comment": "The snake had standards 🐍 Would you have gone to the Congo at that age?",
-      "tags": ["the basement yard", "comedy podcast", "funny clips", "anaconda", "basement yard clips", "banter vault", "shorts"],
+      "yt_title": "The Anaconda Gave Her A MEGA TOE 😭💀",
+      "ig_caption": "Five toes merged into ONE. The mega toe is real 💀 Would you use a pizza cutter? 👇\n#thebasementyard #funny #shorts #podcast",
+      "pinned_comment": "Would you use a pizza cutter on a mega toe? 🍕💀",
+      "tags": ["the basement yard", "mega toe", "comedy podcast", "funny clips", "shorts", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_03",
+      "title": "Do Sharks Lay Eggs Or Give Birth?",
+      "score": 94,
+      "hook": "They get birthed out of eggs. No dude, they get birthed out of shark ginies.",
+      "segments": [
+        ["55:16.00", "55:47.50"]
+      ],
+      "emphasis": [
+        {"t": "55:18.00", "end": "55:19.00", "strength": "medium"},
+        {"t": "55:22.00", "end": "55:23.00", "strength": "strong"},
+        {"t": "55:46.00", "end": "55:47.00", "strength": "strong"}
+      ],
+      "main_speaker": 1,
+      "focus": [
+        {"from": "55:16.00", "to": "55:19.00", "person": [1]},
+        {"from": "55:19.00", "to": "55:25.00", "person": [0]},
+        {"from": "55:25.00", "to": "55:40.00", "person": [1]},
+        {"from": "55:40.00", "to": "55:47.50", "person": [0]}
+      ],
+      "highlight_words": ["shark", "ginies", "eggs", "birthed", "ocean"],
+      "description": "Joe and Frank debate whether sharks lay eggs or give birth... and invent the word 'shark ginies'.",
+      "social_caption": "SHARK GINIES 💀 Joe thought sharks laid eggs 😭 #thebasementyard #comedy #shorts",
+      "hashtags": ["#shorts", "#thebasementyard", "#comedy", "#podcast", "#bantervault"],
+      "yt_title": "He Thought Sharks Laid Eggs… 😭🦈",
+      "ig_caption": "They invented the phrase 'shark ginies' and I will never recover 💀 Did YOU know sharks don't lay eggs? 👇\n#thebasementyard #funny #podcast #shorts",
+      "pinned_comment": "Be honest... did you think sharks lay eggs? 🦈😂",
+      "tags": ["the basement yard", "sharks", "comedy podcast", "funny clips", "shorts", "banter vault"],
       "options": {}
     }
   ]
