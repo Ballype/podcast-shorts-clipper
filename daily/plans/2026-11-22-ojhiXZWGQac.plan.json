@@ -1,0 +1,92 @@
+{
+  "video": {
+    "title": "Bobby's Broken Heart | Ep 347 | Bad Friends",
+    "url": "https://www.youtube.com/watch?v=ojhiXZWGQac",
+    "source": "youtube-clips/source/ojhiXZWGQac.mp4",
+    "subs": "youtube-clips/source/ojhiXZWGQac.en.vtt"
+  },
+  "output_dir": "youtube-clips/2026-11-22-ojhiXZWGQac",
+  "options": {
+    "zoom": "normal",
+    "caption_color": "#FFD400",
+    "words_per_caption": 3,
+    "split_screen": "auto",
+    "sfx": true
+  },
+  "clips": [
+    {
+      "id": "clip_01",
+      "title": "Bobby Lee's Dad Had A Theory 😭💀",
+      "score": 99,
+      "hook": "Why do Asian people have monolids?",
+      "segments": [
+        ["34:30.71", "35:07.50"]
+      ],
+      "emphasis": [
+        {"t": "34:36.51", "end": "34:37.41", "strength": "medium"},
+        {"t": "35:03.26", "end": "35:04.51", "strength": "strong"},
+        {"t": "35:05.11", "end": "35:07.00", "strength": "strong"}
+      ],
+      "main_speaker": 1,
+      "focus": [
+        {"from": "34:30.71", "to": "35:02.00", "person": [1, 3]},
+        {"from": "35:02.00", "to": "35:07.50", "person": [0, 6]}
+      ],
+      "highlight_words": ["Asian", "eyes", "epicanthic", "fold", "climates", "dad", "wrong"],
+      "description": "Andrew reads the scientific evolutionary explanation for monolids... and Bobby reveals what his dad told him growing up 😭💀",
+      "social_caption": "Bobby Lee's dad had his own scientific theory 💀😭 #badfriends #bobbylee #comedy #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#bobbylee", "#comedy", "#bantervault"],
+      "yt_title": "Bobby Lee's Dad Was WRONG 😭💀",
+      "ig_caption": "His dad's explanation for evolution had me crying 💀 Who else's parents made up crazy stories? 👇\n#badfriends #bobbylee #comedy #shorts #funny",
+      "pinned_comment": "What's the wildest lie your parents told you as a kid? 😂👇",
+      "tags": ["bad friends", "bobby lee", "andrew santino", "comedy podcast", "funny clips", "shorts", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_02",
+      "title": "If I Have A Heart Attack, That's On You!",
+      "score": 97,
+      "hook": "So if I get a heart attack, that's on you.",
+      "segments": [
+        ["01:07.10", "01:30.50"]
+      ],
+      "emphasis": [
+        {"t": "01:07.60", "end": "01:08.60", "strength": "strong"},
+        {"t": "01:11.50", "end": "01:12.80", "strength": "strong"},
+        {"t": "01:21.00", "end": "01:23.40", "strength": "strong"}
+      ],
+      "highlight_words": ["heart", "attack", "jacuzzi", "defect", "doctor"],
+      "description": "Bobby confronts Andrew for inviting him to the jacuzzi after finding out his heart is 80% blocked 😭",
+      "social_caption": "Jacuzzi is NOT the medical response 💀 #badfriends #bobbylee #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bobbylee", "#bantervault"],
+      "yt_title": "That's NOT What You Say When A Heart Is Blocked 😭💀",
+      "ig_caption": "His friend tells him his heart is blocked and he offers the jacuzzi 💀 Would you trust Andrew as your doctor? 👇\n#badfriends #comedy #shorts",
+      "pinned_comment": "Would you trust Andrew Santino with medical advice? 😭💀",
+      "tags": ["bad friends", "bobby lee", "andrew santino", "comedy podcast", "shorts", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_03",
+      "title": "Bobby Lee's Heart Surgery Balloon",
+      "score": 95,
+      "hook": "Bobby called me and said I have an 80% blockage in my heart.",
+      "segments": [
+        ["02:37.09", "03:19.00"]
+      ],
+      "emphasis": [
+        {"t": "02:41.49", "end": "02:42.79", "strength": "strong"},
+        {"t": "03:11.49", "end": "03:12.69", "strength": "medium"},
+        {"t": "03:17.79", "end": "03:18.59", "strength": "strong"}
+      ],
+      "highlight_words": ["heart", "blockage", "stent", "balloon", "clown"],
+      "description": "Andrew comforts Bobby about his upcoming heart surgery... until clowns get involved.",
+      "social_caption": "Put a miniature clown in there dude 💀🎈 #badfriends #bobbylee #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#bobbylee", "#comedy", "#bantervault"],
+      "yt_title": "Put A Clown In My Heart Surgery 😭💀",
+      "ig_caption": "They turned heart surgery into a clown show 💀 Only Bobby Lee and Santino.\n#badfriends #bobbylee #shorts #comedy",
+      "pinned_comment": "Bobby's reaction to balloons in surgery had me dead 💀",
+      "tags": ["bad friends", "bobby lee", "andrew santino", "comedy podcast", "shorts", "banter vault"],
+      "options": {}
+    }
+  ]
+}
