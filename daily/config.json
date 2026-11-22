@@ -29,7 +29,7 @@
     "hard_max": 60
   },
   "output_root": "youtube-clips",
-  "telegram_chat_id": 0,
+  "telegram_chat_id": 7875757005,
   "staging_repo": "Ballype/bantervault-staging",
   "clips_repo": "Ballype/podcast-shorts-clipper",
   "instagram_user_id": "me",
