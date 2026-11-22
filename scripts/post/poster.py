@@ -81,6 +81,16 @@ def youtube_configured():
     return all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN'))
 
 
+def get_composio():
+    if not os.environ.get('COMPOSIO_API_KEY'):
+        return None
+    try:
+        return Composio()
+    except Exception as e:
+        print(f'Composio not available: {e}')
+        return None
+
+
 class Composio:
     def __init__(self):
         from composio import Composio as C
@@ -184,26 +194,27 @@ def publish_youtube_direct(clip, path, yt):
 # ---------------------------------------------------------------- posting
 def publish(clip, path, cz, yt=None):
     out = {}
-    ig_user = CFG.get('instagram_user_id', 'me')
-    # The SDK does not auto-upload local paths (that needs an opt-in flag), so upload the video to
-    # Composio storage explicitly and pass the resulting {name, mimetype, s3key} object.
-    try:
-        video = cz.upload(path, 'INSTAGRAM_POST_IG_USER_MEDIA', 'instagram')
-        data, err = cz.run('INSTAGRAM_POST_IG_USER_MEDIA', {'ig_user_id': ig_user, 'media_type': 'REELS', 'share_to_feed': True,
-                                                            'caption': clip['ig_caption'], 'video_file': video})
-    except Exception as e:
-        data, err = None, f'upload failed: {e}'
-    cid = (data or {}).get('id')
-    if cid:
-        data, err = cz.run('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', {'ig_user_id': ig_user, 'creation_id': cid,
-                                                                    'max_wait_seconds': 240, 'poll_interval_seconds': 5})
-    media = (data or {}).get('id') if cid else None
-    out['ig_media_id'], out['ig_err'] = media, None if media else str(err)[:300]
-    if media:
-        meta, _ = cz.run('INSTAGRAM_GET_IG_MEDIA', {'ig_media_id': media, 'fields': 'id,permalink,caption'})
-        out['ig_permalink'] = (meta or {}).get('permalink')
-        out['caption_ok'] = ((meta or {}).get('caption') or '')[:40].strip() == clip['ig_caption'][:40].strip()
-        _, out['ig_comment_err'] = cz.run('INSTAGRAM_POST_IG_MEDIA_COMMENTS', {'ig_media_id': media, 'message': clip['pinned_comment'][:300]})
+    if cz is not None:
+        ig_user = CFG.get('instagram_user_id', 'me')
+        try:
+            video = cz.upload(path, 'INSTAGRAM_POST_IG_USER_MEDIA', 'instagram')
+            data, err = cz.run('INSTAGRAM_POST_IG_USER_MEDIA', {'ig_user_id': ig_user, 'media_type': 'REELS', 'share_to_feed': True,
+                                                                'caption': clip['ig_caption'], 'video_file': video})
+        except Exception as e:
+            data, err = None, f'upload failed: {e}'
+        cid = (data or {}).get('id')
+        if cid:
+            data, err = cz.run('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', {'ig_user_id': ig_user, 'creation_id': cid,
+                                                                        'max_wait_seconds': 240, 'poll_interval_seconds': 5})
+        media = (data or {}).get('id') if cid else None
+        out['ig_media_id'], out['ig_err'] = media, None if media else str(err)[:300]
+        if media:
+            meta, _ = cz.run('INSTAGRAM_GET_IG_MEDIA', {'ig_media_id': media, 'fields': 'id,permalink,caption'})
+            out['ig_permalink'] = (meta or {}).get('permalink')
+            out['caption_ok'] = ((meta or {}).get('caption') or '')[:40].strip() == clip['ig_caption'][:40].strip()
+            _, out['ig_comment_err'] = cz.run('INSTAGRAM_POST_IG_MEDIA_COMMENTS', {'ig_media_id': media, 'message': clip['pinned_comment'][:300]})
+    else:
+        out['ig_media_id'], out['ig_err'] = None, 'skipped (no COMPOSIO_API_KEY configured)'
 
     if yt is not None:
         out.update(publish_youtube_direct(clip, path, yt))
@@ -264,7 +275,7 @@ def main():
         # (unpublished containers expire by themselves). Proves the upload path works.
         q = load(QUEUE, [])
         clip = next(c for c in q if c['status'] == 'ready' and c.get('release_tag'))
-        cz = Composio()
+        cz = get_composio()
         with tempfile.TemporaryDirectory() as tmp:
             path = download(clip, tmp)
             video = cz.upload(path, 'INSTAGRAM_POST_IG_USER_MEDIA', 'instagram')
@@ -275,14 +286,17 @@ def main():
             print('instagram container:', (data or {}).get('id'), err or 'OK (not published)')
         return
     if '--check' in sys.argv:
-        cz = Composio()
-        for tk, items in cz.all.items():
-            for a in items:
-                print(tk, 'ACTIVE account', a.id, 'created', getattr(a, 'created_at', '?'),
-                      'auth_config', getattr(getattr(a, 'auth_config', None), 'id', '?'),
-                      'composio_managed' if cz.managed(a) else 'OWN_APP', '<- used' if a is cz.accounts[tk] else '')
-        info, err = cz.run('INSTAGRAM_GET_USER_INFO', {'ig_user_id': 'me'})
-        print('instagram:', (info or {}).get('username'), err or '')
+        cz = get_composio()
+        if cz:
+            for tk, items in cz.all.items():
+                for a in items:
+                    print(tk, 'ACTIVE account', a.id, 'created', getattr(a, 'created_at', '?'),
+                          'auth_config', getattr(getattr(a, 'auth_config', None), 'id', '?'),
+                          'composio_managed' if cz.managed(a) else 'OWN_APP', '<- used' if a is cz.accounts[tk] else '')
+            info, err = cz.run('INSTAGRAM_GET_USER_INFO', {'ig_user_id': 'me'})
+            print('instagram:', (info or {}).get('username'), err or '')
+        else:
+            print('instagram (via Composio): skipped (COMPOSIO_API_KEY not set)')
         yt = youtube_direct()
         if yt is not None:
             try:
@@ -291,6 +305,9 @@ def main():
             except Exception as e:
                 print('youtube (direct) FAILED:', ' '.join(str(e).split())[:600])
             telegram('✅ Shorts cloud poster: credentials check done (see GitHub log).')
+            return
+        if not cz:
+            print('neither direct YouTube credentials nor Composio credentials found')
             return
         chans, err = cz.run('YOUTUBE_LIST_CHANNEL_VIDEOS', {'mine': True, 'maxResults': 1})
         print('youtube list mine:', 'ok' if not err else err)
@@ -335,7 +352,7 @@ def main():
                           'youtube_id': clip.get('youtube_id'), 'skipped_slots': skipped}, indent=2, ensure_ascii=False))
         return
 
-    cz = Composio()
+    cz = get_composio()
     with tempfile.TemporaryDirectory() as tmp:
         path = download(clip, tmp)
         # Mark before publishing so a crash mid-way can never cause a double post.

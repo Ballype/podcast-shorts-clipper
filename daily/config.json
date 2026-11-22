@@ -1,12 +1,24 @@
 {
   "channels": [
     {
-      "name": "Example Podcast",
-      "url": "https://www.youtube.com/@EXAMPLE_CHANNEL/videos"
+      "name": "The Basement Yard",
+      "url": "https://www.youtube.com/@TheBasementYard/videos"
+    },
+    {
+      "name": "Bad Friends",
+      "url": "https://www.youtube.com/@BadFriends/videos"
+    },
+    {
+      "name": "This Past Weekend (Theo Von)",
+      "url": "https://www.youtube.com/@TheoVon/videos"
+    },
+    {
+      "name": "Are You Garbage?",
+      "url": "https://www.youtube.com/@AreYouGarbage/videos"
     }
   ],
-  "min_video_minutes": 30,
-  "scan_latest": 60,
+  "min_video_minutes": 25,
+  "scan_latest": 30,
   "clips_per_day": {
     "min": 5,
     "max": 7
@@ -18,26 +30,29 @@
   },
   "output_root": "youtube-clips",
   "telegram_chat_id": 0,
-  "staging_repo": "YOUR_GITHUB_USER/your-staging-repo",
-  "clips_repo": "YOUR_GITHUB_USER/your-clipper-repo",
+  "staging_repo": "Ballype/bantervault-staging",
+  "clips_repo": "Ballype/podcast-shorts-clipper",
   "instagram_user_id": "me",
   "staging_keep_days": 1,
   "youtube": {
     "privacy": "private",
-    "category_id": "24",
+    "category_id": "23",
     "default_tags": [
-      "anime podcast",
-      "podcast clips",
-      "weeb",
-      "otaku",
-      "funny",
-      "storytime",
+      "comedy podcast",
+      "funny clips",
+      "bad friends",
+      "the basement yard",
+      "theo von",
+      "are you garbage",
+      "podcast highlights",
+      "stand up comedy",
+      "funny podcast moments",
       "shorts"
     ],
     "test_video_id": ""
   },
   "instagram_handle": "your_instagram",
-  "youtube_handle": "YourChannel",
+  "youtube_handle": "Banter Vault",
   "posting": {
     "posts_per_day": 3,
     "times": [
