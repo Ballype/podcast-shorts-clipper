@@ -58,12 +58,13 @@
     "yt_public": true,
     "yt_comment_err": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned \"The comment thread could not be created due to insufficient permissions. The request might not be properly authorized.\". Details: \"[{'message': 'The comment thread could not be cre",
     "slot": "2026-11-22 14:00",
-    "posted_at": "2026-11-22 14:00"
+    "posted_at": "2026-11-22 14:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-ZMlpicJtOik-clip_03",
     "batch": "2026-11-22-ZMlpicJtOik",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 12:33",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-ZMlpicJtOik\\clips\\clip_03.mp4",
     "youtube_id": "6TJfxJU-Mok",
@@ -83,7 +84,12 @@
     "pinned_comment": "Be honest... did you think sharks lay eggs? 🦈😂",
     "duration": 31,
     "score": 94,
-    "source_title": "That's Improv Folks! | The Basement Yard #581"
+    "source_title": "That's Improv Folks! | The Basement Yard #581",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-22 19:00",
+    "posted_at": "2026-11-22 19:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-ojhiXZWGQac-clip_01",
