@@ -19,6 +19,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -178,12 +179,26 @@ def publish_youtube_direct(clip, path, yt):
                 _, resp = req.next_chunk()
             yid = resp['id']
             clip['youtube_id'] = yid
-        v = yt.videos().list(part='snippet,status', id=yid).execute()['items'][0]
-        out['yt_public'] = v['status']['privacyStatus'] == 'public'
+        # YouTube update propagates asynchronously; poll to verify public status
+        v = None
+        for _ in range(6):
+            time.sleep(2)
+            v_items = yt.videos().list(part='snippet,status', id=yid).execute().get('items', [])
+            if v_items:
+                v = v_items[0]
+                if v.get('status', {}).get('privacyStatus') == 'public':
+                    out['yt_public'] = True
+                    break
+        else:
+            if v:
+                out['yt_public'] = v.get('status', {}).get('privacyStatus') == 'public'
+            else:
+                out['yt_public'] = False
         try:
-            yt.commentThreads().insert(part='snippet', body={'snippet': {
-                'channelId': v['snippet']['channelId'], 'videoId': yid,
-                'topLevelComment': {'snippet': {'textOriginal': clip['pinned_comment']}}}}).execute()
+            if v:
+                yt.commentThreads().insert(part='snippet', body={'snippet': {
+                    'channelId': v['snippet']['channelId'], 'videoId': yid,
+                    'topLevelComment': {'snippet': {'textOriginal': clip['pinned_comment']}}}}).execute()
         except Exception as e:  # comment failing must not fail the post
             out['yt_comment_err'] = str(e)[:300]
     except Exception as e:
