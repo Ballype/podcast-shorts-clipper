@@ -33,7 +33,7 @@
   {
     "uid": "2026-11-22-ZMlpicJtOik-clip_02",
     "batch": "2026-11-22-ZMlpicJtOik",
-    "status": "posting",
+    "status": "ready",
     "created": "2026-11-22 12:33",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-ZMlpicJtOik\\clips\\clip_02.mp4",
     "youtube_id": "C8rc9pLyEKk",
@@ -53,7 +53,12 @@
     "pinned_comment": "Would you use a pizza cutter on a mega toe? 🍕💀",
     "duration": 46,
     "score": 96,
-    "source_title": "That's Improv Folks! | The Basement Yard #581"
+    "source_title": "That's Improv Folks! | The Basement Yard #581",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": false,
+    "yt_comment_err": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned \"The comment thread could not be created due to insufficient permissions. The request might not be properly authorized.\". Details: \"[{'message': 'The comment thread could not be cre",
+    "slot": "2026-11-22 14:00",
+    "posted_at": "2026-11-22 14:00"
   },
   {
     "uid": "2026-11-22-ZMlpicJtOik-clip_03",
