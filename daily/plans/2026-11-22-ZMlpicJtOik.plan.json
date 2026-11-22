@@ -1,0 +1,50 @@
+{
+  "video": {
+    "title": "That's Improv Folks! | The Basement Yard #581",
+    "url": "https://www.youtube.com/watch?v=ZMlpicJtOik",
+    "source": "youtube-clips/source/ZMlpicJtOik.mp4",
+    "subs": "youtube-clips/source/ZMlpicJtOik.en.vtt"
+  },
+  "output_dir": "youtube-clips/2026-11-22-ZMlpicJtOik",
+  "options": {
+    "zoom": "normal",
+    "caption_color": "#FFD400",
+    "words_per_caption": 3,
+    "split_screen": "auto",
+    "sfx": true
+  },
+  "clips": [
+    {
+      "id": "clip_01",
+      "title": "My Grandma Got Swallowed By An Anaconda",
+      "score": 98,
+      "hook": "She actually got attacked and swallowed by an anaconda.",
+      "segments": [
+        ["44:11.10", "45:02.30"]
+      ],
+      "emphasis": [
+        {"t": "44:14.56", "end": "44:15.56", "strength": "strong"},
+        {"t": "44:30.32", "end": "44:32.16", "strength": "strong"},
+        {"t": "45:00.16", "end": "45:01.28", "strength": "strong"}
+      ],
+      "main_speaker": 0,
+      "focus": [
+        {"from": "44:11.10", "to": "44:23.00", "person": [0]},
+        {"from": "44:23.00", "to": "44:26.00", "person": [1]},
+        {"from": "44:26.00", "to": "44:36.00", "person": [0]},
+        {"from": "44:36.00", "to": "44:40.00", "person": [1]},
+        {"from": "44:40.00", "to": "44:59.00", "person": [0]},
+        {"from": "44:59.00", "to": "45:02.30", "person": [1]}
+      ],
+      "highlight_words": ["anaconda", "swallowed", "varicose", "veins", "Congo", "snake"],
+      "description": "Joe drops the most absurd story ever — grandma got partially swallowed by an anaconda in the Congo, and the snake backed out because of her varicose veins.",
+      "social_caption": "The snake saw her varicose veins and said NOPE 😭🐍 #thebasementyard #comedy #shorts",
+      "hashtags": ["#shorts", "#thebasementyard", "#comedy", "#podcast", "#bantervault"],
+      "yt_title": "My Grandma Got Swallowed By An Anaconda 😭🐍",
+      "ig_caption": "The snake saw her varicose veins and backed OUT 💀 Would you go to the Congo at 80? 👇\n#thebasementyard #comedy #podcast #shorts #funny",
+      "pinned_comment": "The snake had standards 🐍 Would you have gone to the Congo at that age?",
+      "tags": ["the basement yard", "comedy podcast", "funny clips", "anaconda", "basement yard clips", "banter vault", "shorts"],
+      "options": {}
+    }
+  ]
+}
