@@ -124,7 +124,7 @@
   {
     "uid": "2026-11-22-ojhiXZWGQac-clip_02",
     "batch": "2026-11-22-ojhiXZWGQac",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 13:31",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-ojhiXZWGQac\\clips\\clip_02.mp4",
     "youtube_id": "MSgVug8pNJw",
@@ -144,7 +144,11 @@
     "pinned_comment": "Would you trust Andrew Santino with medical advice? 😭💀",
     "duration": 23,
     "score": 97,
-    "source_title": "Bobby's Broken Heart | Ep 347 | Bad Friends"
+    "source_title": "Bobby's Broken Heart | Ep 347 | Bad Friends",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-23 14:00",
+    "posted_at": "2026-11-23 14:00"
   },
   {
     "uid": "2026-11-22-ojhiXZWGQac-clip_03",
