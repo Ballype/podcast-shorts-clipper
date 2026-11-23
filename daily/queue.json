@@ -94,7 +94,7 @@
   {
     "uid": "2026-11-22-ojhiXZWGQac-clip_01",
     "batch": "2026-11-22-ojhiXZWGQac",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 13:31",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-ojhiXZWGQac\\clips\\clip_01.mp4",
     "youtube_id": "5hTg7km8xOQ",
@@ -115,7 +115,11 @@
     "pinned_comment": "What's the wildest lie your parents told you as a kid? 😂👇",
     "duration": 36,
     "score": 99,
-    "source_title": "Bobby's Broken Heart | Ep 347 | Bad Friends"
+    "source_title": "Bobby's Broken Heart | Ep 347 | Bad Friends",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-23 09:00",
+    "posted_at": "2026-11-23 09:00"
   },
   {
     "uid": "2026-11-22-ojhiXZWGQac-clip_02",
