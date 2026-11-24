@@ -88,7 +88,7 @@ def _ts(t):
     return f'{h}:{m:02d}:{s:05.2f}'
 
 
-def build_ass(words, out_path, opts, highlight=(), split_spans=(), drop_fillers=True):
+def build_ass(words, out_path, opts, highlight=(), split_spans=(), drop_fillers=True, duration=None):
     size = int(round(104 * float(opts.get('caption_size', 1.0))))
     accent = hex_to_ass(opts['accent'])
     font = opts.get('caption_font', 'Arial Black')
@@ -110,6 +110,7 @@ ScaledBorderAndShadow: yes
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,1,0,1,7,4,5,60,60,0,1
+Style: SubBadge,Arial,52,&H00FFFFFF,&H00FFFFFF,&H00111111,&H90000000,-1,0,0,0,100,100,2,0,1,4,3,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -150,6 +151,16 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for i in range(len(events) - 1):
         events[i][1] = min(events[i][1], events[i + 1][0])
     lines = [f'Dialogue: 0,{_ts(st)},{_ts(en)},Cap,,0,0,0,,{text}' for st, en, text in events if en - st >= 0.03]
+    if duration and duration > 12.0 and opts.get('subscribe_badge', True):
+        # Pop up around 68% of the video duration (before tail end), lasting 3 seconds
+        sub_start = duration * 0.68
+        sub_end = min(sub_start + 3.0, duration - 1.5)
+        if sub_end - sub_start >= 2.0:
+            # Elegant popup animation: pop in (scale from 80% to 105% to 100%), hold, and fade out smoothly
+            # Primary color red accent for subscribe tag or bright white with outline
+            badge_anim = r'{\pos(540,420)\fscx80\fscy80\t(0,120,\fscx106\fscy106)\t(120,200,\fscx100\fscy100)\fad(0,250)}'
+            badge_text = rf'{badge_anim}{{\c&H002222EE&}}â–¶ {{\c&H00FFFFFF&}}SUBSCRIBE FOR MORE {{\c&H002222EE&}}ðŸ””'
+            lines.append(f'Dialogue: 1,{_ts(sub_start)},{_ts(sub_end)},SubBadge,,0,0,0,,{badge_text}')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(header + '\n'.join(lines) + '\n')
     return {'groups': len(groups), 'highlighted': highlighted}

@@ -26,7 +26,7 @@ def render(intermediate, cam, ass_path, out_path, fps, duration, sfx_cues, sfx_p
     W, H = cam['src_size']
     frames = cam['frames']
     # --- audio graph
-    gains = {'whoosh': opts.get('sfx_whoosh_db', -7), 'impact': opts.get('sfx_impact_db', -8)}
+    gains = {'whoosh': opts.get('sfx_whoosh_db', -7), 'impact': opts.get('sfx_impact_db', -8), 'chime': opts.get('sfx_chime_db', -9)}
     inputs = ['-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{OUT_W}x{OUT_H}', '-r', f'{fps}', '-i', '-',
               '-i', str(Path(intermediate).resolve())]
     used = [c for c in sfx_cues if c['kind'] in sfx_paths]

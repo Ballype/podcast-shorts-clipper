@@ -1,0 +1,133 @@
+{
+  "video": {
+    "title": "Live Long and Floss More | Ep 346 | Bad Friends",
+    "url": "https://www.youtube.com/watch?v=2nh3Uj46Nfg",
+    "source": "youtube-clips/source/2nh3Uj46Nfg.mp4",
+    "subs": "youtube-clips/source/2nh3Uj46Nfg.en.vtt"
+  },
+  "output_dir": "youtube-clips/2026-11-24-2nh3Uj46Nfg",
+  "options": {
+    "zoom": "normal",
+    "caption_color": "#FFD400",
+    "words_per_caption": 3,
+    "split_screen": "auto",
+    "sfx": true
+  },
+  "clips": [
+    {
+      "id": "clip_01",
+      "title": "Who Are These Two Idiots? (White Dude & Asian Dude)",
+      "score": 98,
+      "hook": "Who are these two idiots? White dude and Asian dude.",
+      "segments": [
+        ["00:01:46.00", "00:02:28.00"]
+      ],
+      "emphasis": [
+        {"t": "00:01:48.00", "end": "00:01:51.00", "strength": "strong"},
+        {"t": "00:02:05.00", "end": "00:02:08.00", "strength": "strong"}
+      ],
+      "highlight_words": ["idiots", "disgusting", "captain", "picard", "died", "asian", "white"],
+      "description": "Bobby Lee and Andrew Santino breakdown the definition of Bad Friends and Bobby mourns Captain Picard.",
+      "social_caption": "Who are these two idiots? 😂 #badfriends #bobbylee #andrewsantino #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bantervault"],
+      "yt_title": "Who Are These Two Idiots? (White Dude & Asian Dude) 😂",
+      "yt_description": "Bobby Lee and Andrew Santino get into why they are the absolute worst best friends on YouTube. 😂\n\n🤣 Follow for daily podcast comedy clips → @bantervaultclips\n\n🎙️ Clip from: Live Long and Floss More | Ep 346 | Bad Friends — https://www.youtube.com/watch?v=2nh3Uj46Nfg\n\n#shorts #badfriends #bobbylee #andrewsantino #bantervault",
+      "ig_caption": "White dude and Asian dude. You two are disgusting 😂 Drop your favorite Bad Friends duo below! 👇\n#badfriends #bobbylee #comedy #shorts",
+      "pinned_comment": "Name a more unhinged comedy duo than Bobby and Andrew 😂👇",
+      "tags": ["shorts", "bad friends", "bobby lee", "andrew santino", "comedy", "funny", "podcast clips", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_02",
+      "title": "Patrick Stewart Died Today?! (Live Long & Floss More)",
+      "score": 97,
+      "hook": "He died today. He died on my busiest day.",
+      "segments": [
+        ["00:04:12.00", "00:04:56.00"]
+      ],
+      "emphasis": [
+        {"t": "00:04:21.00", "end": "00:04:24.00", "strength": "strong"},
+        {"t": "00:04:39.00", "end": "00:04:42.00", "strength": "strong"}
+      ],
+      "highlight_words": ["died", "busiest", "patrick", "stewart", "floss", "dentistry", "vulcan"],
+      "description": "Bobby Lee mourns Patrick Stewart dying on his busiest day and invents Star Trek dentistry.",
+      "social_caption": "He died on my busiest day 😭💀 #badfriends #bobbylee #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bantervault"],
+      "yt_title": "He Died On My Busiest Day 😭💀 (Live Long & Floss More)",
+      "yt_description": "Bobby Lee reacts to Patrick Stewart allegedly passing away on his busiest day of the year. 😭💀\n\n🤣 Follow for daily podcast comedy clips → @bantervaultclips\n\n🎙️ Clip from: Live Long and Floss More | Ep 346 | Bad Friends — https://www.youtube.com/watch?v=2nh3Uj46Nfg\n\n#shorts #badfriends #bobbylee #andrewsantino #bantervault",
+      "ig_caption": "Live long and floss more 😂 Would you visit a Star Trek themed dental clinic? 👇\n#badfriends #comedy #shorts #startrek",
+      "pinned_comment": "Bobby mourning Captain Picard on his 'busiest day' is unmatched comedy 😭💀",
+      "tags": ["shorts", "bad friends", "bobby lee", "andrew santino", "comedy", "funny", "star trek", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_03",
+      "title": "Dentist Told Bobby: 'We Gotta Remove All Your Teeth'",
+      "score": 96,
+      "hook": "My dentist said we got to get all of them removed.",
+      "segments": [
+        ["00:05:37.00", "00:06:12.00"]
+      ],
+      "emphasis": [
+        {"t": "00:05:49.00", "end": "00:05:52.00", "strength": "strong"},
+        {"t": "00:06:03.00", "end": "00:06:06.00", "strength": "strong"}
+      ],
+      "highlight_words": ["teeth", "removed", "dentist", "die", "smile", "unhealthy"],
+      "description": "Bobby Lee confesses his dentist wants to remove every single tooth in his mouth and Andrew makes him smile.",
+      "social_caption": "The dentist told Bobby to remove EVERY tooth in his head 😭💀 #badfriends #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bantervault"],
+      "yt_title": "Dentist Told Bobby: 'Remove ALL Your Teeth' 😭💀",
+      "yt_description": "Bobby Lee reveals his dentist said every single one of his teeth is dying and needs to be pulled. Andrew makes him smile. 😭\n\n🤣 Follow for daily podcast comedy clips → @bantervaultclips\n\n🎙️ Clip from: Live Long and Floss More | Ep 346 | Bad Friends — https://www.youtube.com/watch?v=2nh3Uj46Nfg\n\n#shorts #badfriends #bobbylee #andrewsantino #bantervault",
+      "ig_caption": "Andrew forcing Bobby to smile deep for the camera is cruel and hilarious 💀🦷 Drop a comment 👇\n#badfriends #bobbylee #dentist #comedy #shorts",
+      "pinned_comment": "Bobby saying 'I can't smile deep' has me in tears 😭💀 Drop your thoughts 👇",
+      "tags": ["shorts", "bad friends", "bobby lee", "andrew santino", "dentist", "teeth", "comedy", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_04",
+      "title": "Bobby Lee Deserves A Guinness World Record For This",
+      "score": 95,
+      "hook": "How many dogs bite girls right there?! Bobby deserves a Guinness record.",
+      "segments": [
+        ["00:36:12.00", "00:36:47.00"]
+      ],
+      "emphasis": [
+        {"t": "00:36:17.00", "end": "00:36:20.00", "strength": "strong"},
+        {"t": "00:36:34.00", "end": "00:36:37.00", "strength": "strong"}
+      ],
+      "highlight_words": ["guinness", "dog", "bite", "record", "plot", "world"],
+      "description": "Andrew and Bobby discuss a bizarre dog attack and argue Bobby deserves a Guinness World Record.",
+      "social_caption": "Bobby Lee deserves a Guinness World Record for this 😭💀 #badfriends #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bantervault"],
+      "yt_title": "Bobby Lee Deserves A Guinness World Record For This 😭💀",
+      "yt_description": "Andrew Santino claims Bobby Lee deserves a Guinness World Record for the most bizarre incident in podcast history. 😂\n\n🤣 Follow for daily podcast comedy clips → @bantervaultclips\n\n🎙️ Clip from: Live Long and Floss More | Ep 346 | Bad Friends — https://www.youtube.com/watch?v=2nh3Uj46Nfg\n\n#shorts #badfriends #bobbylee #andrewsantino #bantervault",
+      "ig_caption": "'We lost the plot years ago' - The truest statement in Bad Friends history 😂 Drop a comment below! 👇\n#badfriends #bobbylee #comedy #shorts",
+      "pinned_comment": "Where are you, Guinness? Give this man his award 😭💀",
+      "tags": ["shorts", "bad friends", "bobby lee", "andrew santino", "guinness", "comedy", "funny", "banter vault"],
+      "options": {}
+    },
+    {
+      "id": "clip_05",
+      "title": "Bobby Was The ONLY Asian Comedian Not Invited 😂",
+      "score": 95,
+      "hook": "Bobby was legitimately the only Asian comedian not on the lineup that night.",
+      "segments": [
+        ["01:16:47.00", "01:17:21.00"]
+      ],
+      "emphasis": [
+        {"t": "01:16:50.00", "end": "01:16:53.00", "strength": "strong"},
+        {"t": "01:17:09.00", "end": "01:17:12.00", "strength": "strong"}
+      ],
+      "highlight_words": ["asian", "lineup", "bobby", "comedian", "tokyo", "invited"],
+      "description": "Rick Ingram reveals how he was the only non-Asian comic on an all-Asian comedy show that excluded Bobby Lee.",
+      "social_caption": "Bobby was the ONLY Asian comedian not on the lineup 😭💀 #badfriends #shorts",
+      "hashtags": ["#shorts", "#badfriends", "#comedy", "#bantervault"],
+      "yt_title": "Bobby Was The ONLY Asian Comedian Not Invited 😂",
+      "yt_description": "Guest comic Rick Ingram reveals how an all-Asian comedy special in Little Tokyo booked every comic in town except Bobby Lee. 😂\n\n🤣 Follow for daily podcast comedy clips → @bantervaultclips\n\n🎙️ Clip from: Live Long and Floss More | Ep 346 | Bad Friends — https://www.youtube.com/watch?v=2nh3Uj46Nfg\n\n#shorts #badfriends #bobbylee #comedy #bantervault",
+      "ig_caption": "Booking every Asian comedian in Hollywood except Bobby Lee is diabolical 😂💀 Drop your thoughts 👇\n#badfriends #bobbylee #comedy #shorts #standup",
+      "pinned_comment": "Leaving Bobby Lee off an all-Asian comedy special is wild disrespect 😭💀",
+      "tags": ["shorts", "bad friends", "bobby lee", "stand up comedy", "comedy", "funny", "podcast clips", "banter vault"],
+      "options": {}
+    }
+  ]
+}

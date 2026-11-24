@@ -71,6 +71,9 @@ def get_sfx_paths():
         if not p.exists():
             _write(p, gen())
         out[name] = p
+    chime_path = SFX_DIR / 'chime.wav'
+    if chime_path.exists():
+        out['chime'] = chime_path
     return out
 
 

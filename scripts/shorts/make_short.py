@@ -193,7 +193,7 @@ def make_clip(plan, clip, all_words, out_dir, fast=False, analyze_only=False):
     opts['accent'] = accent
     ass_path = work / 'captions.ass'
     cap = captions.build_ass(words, ass_path, opts, highlight=clip.get('highlight_words', []),
-                             split_spans=cam['split_spans'])
+                             split_spans=cam['split_spans'], duration=duration)
 
     lap('plan+captions')
     print(f'[{cid}] 5/6 rendering 1080x1920 (this is the slow part)...', flush=True)
@@ -202,7 +202,11 @@ def make_clip(plan, clip, all_words, out_dir, fast=False, analyze_only=False):
         d.mkdir(parents=True, exist_ok=True)
     out_mp4 = clips_dir / f'{cid}.mp4'
     sfx_paths = sfx_mod.get_sfx_paths() if (opts['sfx'] and cam['sfx']) else {}
-    render.render(prep['path'], cam, ass_path, out_mp4, fps, duration, cam['sfx'] if opts['sfx'] else [],
+    sfx_list = list(cam['sfx']) if opts['sfx'] else []
+    if opts.get('sfx', True) and 'chime' in sfx_paths and duration > 12.0 and opts.get('subscribe_badge', True):
+        sub_t = duration * 0.68
+        sfx_list.append({'t': sub_t, 'kind': 'chime'})
+    render.render(prep['path'], cam, ass_path, out_mp4, fps, duration, sfx_list,
                   sfx_paths, opts, work)
 
     lap('render')
