@@ -215,7 +215,7 @@
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_02",
     "batch": "2026-11-22-el_oC5zPJO0",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 18:09",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-el_oC5zPJO0\\clips\\clip_02.mp4",
     "youtube_id": "NVJHsilMhmI",
@@ -236,7 +236,11 @@
     "pinned_comment": "Noah packed TWO mosquitoes... priorities 💀 What would you have left behind?",
     "duration": 57,
     "score": 97,
-    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696"
+    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-24 14:00",
+    "posted_at": "2026-11-24 14:00"
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_03",
