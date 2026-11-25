@@ -275,7 +275,7 @@
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_04",
     "batch": "2026-11-22-el_oC5zPJO0",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 18:09",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-el_oC5zPJO0\\clips\\clip_04.mp4",
     "youtube_id": "6i8tVxlEWaM",
@@ -296,7 +296,11 @@
     "pinned_comment": "He really believed in that cleaner 😭 Did you ever buy something from a door-to-door salesman?",
     "duration": 45,
     "score": 94,
-    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696"
+    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-25 09:00",
+    "posted_at": "2026-11-25 09:00"
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_05",
