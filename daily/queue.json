@@ -210,7 +210,8 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-24 09:00",
-    "posted_at": "2026-11-24 09:00"
+    "posted_at": "2026-11-24 09:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_02",
@@ -240,7 +241,8 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-24 14:00",
-    "posted_at": "2026-11-24 14:00"
+    "posted_at": "2026-11-24 14:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_03",
@@ -270,7 +272,8 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-24 19:00",
-    "posted_at": "2026-11-24 19:00"
+    "posted_at": "2026-11-24 19:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_04",
@@ -300,12 +303,13 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-25 09:00",
-    "posted_at": "2026-11-25 09:00"
+    "posted_at": "2026-11-25 09:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-el_oC5zPJO0-clip_05",
     "batch": "2026-11-22-el_oC5zPJO0",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 18:09",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-el_oC5zPJO0\\clips\\clip_05.mp4",
     "youtube_id": "qkhagiUWKHA",
@@ -326,7 +330,12 @@
     "pinned_comment": "Should we bang pans every time someone stays married? 😭 Drop your thoughts 👇",
     "duration": 49,
     "score": 92,
-    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696"
+    "source_title": "Katt Williams | This Past Weekend w/ Theo Von #696",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-25 14:00",
+    "posted_at": "2026-11-25 14:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-nUWcRu9Uyx0-clip_01",
