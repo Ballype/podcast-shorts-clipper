@@ -340,7 +340,7 @@
   {
     "uid": "2026-11-22-nUWcRu9Uyx0-clip_01",
     "batch": "2026-11-22-nUWcRu9Uyx0",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 18:54",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-nUWcRu9Uyx0\\clips\\clip_01.mp4",
     "youtube_id": "EjQs5SPR7jo",
@@ -361,7 +361,11 @@
     "pinned_comment": "Wearing thin sweatpants to work is diabolical 😭 Be honest: do you wear sweatpants to the office? 👇",
     "duration": 59,
     "score": 98,
-    "source_title": "Sweatpants at Work! | Are You Garbage Comedy Podcast w/ Kevin Ryan & H. Foley"
+    "source_title": "Sweatpants at Work! | Are You Garbage Comedy Podcast w/ Kevin Ryan & H. Foley",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-25 19:00",
+    "posted_at": "2026-11-25 19:00"
   },
   {
     "uid": "2026-11-22-nUWcRu9Uyx0-clip_02",
