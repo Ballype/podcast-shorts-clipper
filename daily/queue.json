@@ -399,7 +399,7 @@
   {
     "uid": "2026-11-22-nUWcRu9Uyx0-clip_03",
     "batch": "2026-11-22-nUWcRu9Uyx0",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 18:54",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-nUWcRu9Uyx0\\clips\\clip_03.mp4",
     "youtube_id": "Axer9tQueMU",
@@ -420,7 +420,11 @@
     "pinned_comment": "Do you know your window tint percent? If you do, you're a certified dirtbag 😭🚗👇",
     "duration": 55,
     "score": 95,
-    "source_title": "Sweatpants at Work! | Are You Garbage Comedy Podcast w/ Kevin Ryan & H. Foley"
+    "source_title": "Sweatpants at Work! | Are You Garbage Comedy Podcast w/ Kevin Ryan & H. Foley",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-26 14:00",
+    "posted_at": "2026-11-26 14:00"
   },
   {
     "uid": "2026-11-22-nUWcRu9Uyx0-clip_04",
