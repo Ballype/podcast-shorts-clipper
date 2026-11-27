@@ -493,7 +493,7 @@
   {
     "uid": "2026-11-22-1sWRNpm9yD4-clip_02",
     "batch": "2026-11-22-1sWRNpm9yD4",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 19:57",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-1sWRNpm9yD4\\clips\\clip_02.mp4",
     "youtube_id": "2bzBwvQ1ukU",
@@ -515,7 +515,11 @@
     "pinned_comment": "Bro is terrified of Obama's presidential aura 😭 What would you do? 👇",
     "duration": 48,
     "score": 96,
-    "source_title": "Frank For Mayor! | The Basement Yard #580"
+    "source_title": "Frank For Mayor! | The Basement Yard #580",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-27 14:00",
+    "posted_at": "2026-11-27 14:00"
   },
   {
     "uid": "2026-11-22-1sWRNpm9yD4-clip_03",
