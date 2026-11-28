@@ -488,7 +488,8 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-27 09:00",
-    "posted_at": "2026-11-27 09:00"
+    "posted_at": "2026-11-27 09:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-1sWRNpm9yD4-clip_02",
@@ -519,7 +520,8 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-27 14:00",
-    "posted_at": "2026-11-27 14:00"
+    "posted_at": "2026-11-27 14:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-1sWRNpm9yD4-clip_03",
@@ -550,12 +552,13 @@
     "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
     "yt_public": true,
     "slot": "2026-11-27 19:00",
-    "posted_at": "2026-11-27 19:00"
+    "posted_at": "2026-11-27 19:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-22-1sWRNpm9yD4-clip_04",
     "batch": "2026-11-22-1sWRNpm9yD4",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-22 19:57",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-22-1sWRNpm9yD4\\clips\\clip_04.mp4",
     "youtube_id": "n-zs2XTETTM",
@@ -577,7 +580,12 @@
     "pinned_comment": "Frank took immediate personal strays 😭😂 Drop a comment below 👇",
     "duration": 39,
     "score": 94,
-    "source_title": "Frank For Mayor! | The Basement Yard #580"
+    "source_title": "Frank For Mayor! | The Basement Yard #580",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-28 09:00",
+    "posted_at": "2026-11-28 09:00",
+    "release_deleted": true
   },
   {
     "uid": "2026-11-24-2nh3Uj46Nfg-clip_01",
