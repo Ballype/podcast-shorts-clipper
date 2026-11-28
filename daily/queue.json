@@ -590,7 +590,7 @@
   {
     "uid": "2026-11-24-2nh3Uj46Nfg-clip_01",
     "batch": "2026-11-24-2nh3Uj46Nfg",
-    "status": "posting",
+    "status": "posted",
     "created": "2026-11-24 07:27",
     "video_path": "C:\\Users\\Administrator\\Desktop\\YT CLIPPING\\podcast-shorts-clipper\\youtube-clips\\2026-11-24-2nh3Uj46Nfg\\clips\\clip_01.mp4",
     "youtube_id": "YgyNLBjzzHg",
@@ -612,7 +612,11 @@
     "pinned_comment": "Name a more unhinged comedy duo than Bobby and Andrew 😂👇",
     "duration": 42,
     "score": 98,
-    "source_title": "Live Long and Floss More | Ep 346 | Bad Friends"
+    "source_title": "Live Long and Floss More | Ep 346 | Bad Friends",
+    "ig_err": "skipped (no COMPOSIO_API_KEY configured)",
+    "yt_public": true,
+    "slot": "2026-11-28 14:00",
+    "posted_at": "2026-11-28 14:00"
   },
   {
     "uid": "2026-11-24-2nh3Uj46Nfg-clip_02",
